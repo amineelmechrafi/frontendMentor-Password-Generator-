@@ -82,8 +82,31 @@ try {
 
 - How to customize a range input
 - How to customize a checkbox input
+ 
+about enums
+![alt text](image.png)
+![alt text](image-1.png)
+```
+  useEffect(()=>{
+    setStrenght()
+  },[includeLowerCases,includeNumbers,includeSymbols,includeUpperCases]) 
 
-### Bugs
+  ```
+  in that code setStrenght is executed everytime the includes states are changing so it will execute this function
+  ```
+  setStrenght:()=>{set(state=>({strenght:calculateStrenght(state.includeLowerCases,state.includeNumbers,state.includeSymbols,state.includeUpperCases)}))}
+
+  ```
+  who calculate the state based on the inculdes states
+
+  ![alt text](image-2.png)
+  how to work with map if you have constant number of iterations
+  ![alt text](image-3.png)
+  A mathematical explanation of how to scale a number
+  we know that Math.random() generates a number 0< =r < 1
+  but we need a number between min <= x < max 
+  by multiplying r*(max-min) we will get 0 <= r*(max-min) <= max -min then     min <= r*(max-min) +min < max beceause max will be exclusive and we will use the Math.floor() function we can add one to max to still have a chance to get it in a random generation so the inequation becomes min <= r*(max-min +1) < max +1 
+ ### Bugs
 
 - When checked, If the user hovers over the checkbox , the cursor doesn't switch to pointer and the click doesn't uncheck the case
 

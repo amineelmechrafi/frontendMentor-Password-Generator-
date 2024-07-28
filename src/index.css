@@ -55,7 +55,7 @@ li label, h2 , button{
   font-weight: 600;
 }
 .rect{
-  border: 2px solid hsl(252,11%,91%) ;
+  /* border: 2px solid hsl(252,11%,91%) ; */
   height: 24px;
   width: 10px;
 }
