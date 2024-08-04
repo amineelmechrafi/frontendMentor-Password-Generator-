@@ -106,6 +106,9 @@ about enums
   we know that Math.random() generates a number 0< =r < 1
   but we need a number between min <= x < max 
   by multiplying r*(max-min) we will get 0 <= r*(max-min) <= max -min then     min <= r*(max-min) +min < max beceause max will be exclusive and we will use the Math.floor() function we can add one to max to still have a chance to get it in a random generation so the inequation becomes min <= r*(max-min +1) < max +1 
+  
+
+  how to copy a texte to the keyboard
  ### Bugs
 
 - When checked, If the user hovers over the checkbox , the cursor doesn't switch to pointer and the click doesn't uncheck the case
